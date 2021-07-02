@@ -1,4 +1,7 @@
-require("dotenv").config({Path: "./config.env"});
+//require("dotenv").config();
+
+const path = require('path')
+require('dotenv').config({ path: path.resolve(__dirname, './Config.env') })
 
 const auth=require("./routes/auth");
 
